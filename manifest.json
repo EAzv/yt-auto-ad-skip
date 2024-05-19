@@ -1,0 +1,21 @@
+{
+  "name": "YT Auto Ad Skip",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Automatically skip YouTube ads, so you don't have to manually click the Skip button anymore",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_icon": "images/icon.png"
+  }
+}
+  
